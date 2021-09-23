@@ -1,0 +1,24 @@
+.item-grid-1{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.item-grid-2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.item-grid-3{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.grid-left-jself{
+  justify-self: start;
+}
+.grid-center-jsels{
+  justify-self: center;
+}
+.grid-right-jself{
+  justify-self: end;
+}
+.grid-center-rows-jsels{
+  justify-self: center;
+}
