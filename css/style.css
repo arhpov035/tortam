@@ -6,6 +6,21 @@
   font-family: 'Noto Sans', sans-serif;
   box-sizing: border-box;
 }
+input:focus::-webkit-input-placeholder {
+  color: transparent;
+}
+input:focus:-moz-placeholder {
+  color: transparent;
+}
+/* FF 4-18 */
+input:focus::-moz-placeholder {
+  color: transparent;
+}
+/* FF 19+ */
+input:focus:-ms-input-placeholder {
+  color: transparent;
+}
+/* IE 10+ */
 .youtube-icon {
   fill: red;
 }
@@ -557,68 +572,71 @@ header .bottom .search-favorites .favorites p {
   align-self: center;
   height: 95%;
 }
-.detail-products .detail-product.item-1 .detail-description .block-price {
+.detail-products .detail-product.item-1 .detail-description .item-1 {
+  padding: 1em;
+}
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price {
   grid-template-columns: max-content max-content;
   justify-content: start;
   grid-column-gap: 2em;
   margin-top: 1em;
 }
-.detail-products .detail-product.item-1 .detail-description .block-price .price-beffore,
-.detail-products .detail-product.item-1 .detail-description .block-price .price-after {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-beffore,
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-after {
   max-width: 190px;
   padding-left: 2.5em;
 }
-.detail-products .detail-product.item-1 .detail-description .block-price .price-beffore .kg,
-.detail-products .detail-product.item-1 .detail-description .block-price .price-after .kg {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-beffore .kg,
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-after .kg {
   font-weight: 600;
   font-size: 14px;
   padding-top: 0;
   line-height: 1;
 }
-.detail-products .detail-product.item-1 .detail-description .block-price .price-beffore .text-bottom,
-.detail-products .detail-product.item-1 .detail-description .block-price .price-after .text-bottom {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-beffore .text-bottom,
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-after .text-bottom {
   font-size: 12px;
   line-height: 0.9;
   margin-top: .5em;
 }
-.detail-products .detail-product.item-1 .detail-description .block-price .price-beffore .text-bottom .question,
-.detail-products .detail-product.item-1 .detail-description .block-price .price-after .text-bottom .question {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-beffore .text-bottom .question,
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-after .text-bottom .question {
   background: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/new-verstka/icon/question-sign-in-circles.svg) no-repeat;
   display: inline-block;
   height: 15px;
   width: 15px;
   background-position: bottom;
 }
-.detail-products .detail-product.item-1 .detail-description .block-price .price-after {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-after {
   background: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/new-verstka/icon/ruble-left.svg) no-repeat;
 }
-.detail-products .detail-product.item-1 .detail-description .block-price .price-beffore {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-price .price-beffore {
   background: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/new-verstka/icon/ruble-right.svg) no-repeat;
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight {
   margin-top: 1em;
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight .choose-weight {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .choose-weight {
   grid-template-columns: repeat(2, 1fr);
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight .choose-weight .weight {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .choose-weight .weight {
   font-size: 16px;
   float: left;
   font-weight: 600;
   display: inline-block;
   padding: 0 10px 0 0;
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight .choose-weight .table-size {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .choose-weight .table-size {
   font-size: 12px;
   border-bottom: 1px dashed #000;
   cursor: pointer;
   justify-self: start;
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight .table-weight .slide-block {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .table-weight .slide-block {
   grid-template-columns: repeat(6, 1fr);
   margin-top: 1em;
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight .table-weight .slide-block div {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .table-weight .slide-block div {
   position: relative;
   display: flex;
   align-items: center;
@@ -629,17 +647,17 @@ header .bottom .search-favorites .favorites p {
   border-radius: 8px;
   opacity: .7;
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight .table-weight .slide-block div:hover {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .table-weight .slide-block div:hover {
   box-shadow: inset 0 0 0 1px #009be7;
   opacity: 1;
   cursor: pointer;
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight .table-weight .slide-block div.active {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .table-weight .slide-block div.active {
   box-shadow: inset 0 0 0 1px #009be7;
   position: relative;
   opacity: 1;
 }
-.detail-products .detail-product.item-1 .detail-description .block-weight .table-weight .slide-block div.active .verified {
+.detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .table-weight .slide-block div.active .verified {
   background: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/new-verstka/icon/verified.svg) no-repeat;
   display: grid;
   position: absolute;
@@ -648,21 +666,108 @@ header .bottom .search-favorites .favorites p {
   top: -3px;
   left: -3px;
 }
+.detail-products .detail-product.item-1 .detail-description .item-1 .left-rigth {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 2em;
+}
+.detail-products .detail-product.item-1 .detail-description .item-1 .left-rigth .filling-text-left {
+  justify-self: start;
+}
+.detail-products .detail-product.item-1 .detail-description .item-1 .left-rigth .filling-text-rigth {
+  justify-self: end;
+  font-size: 12px;
+  border-bottom: 1px dashed #424242;
+}
 .detail-products .detail-product.item-1 .detail-description .block-filling {
   margin-top: 2em;
 }
-.detail-products .detail-product.item-1 .detail-arrange {
-  border: 1px solid silver;
-}
-.left-rigth {
+.detail-products .detail-product.item-1 .detail-description .add-writing {
   display: flex;
+  justify-content: center;
+  margin-top: 1em;
 }
-.left-rigth div:first-child {
-  background: red;
+.detail-products .detail-product.item-1 .detail-description .add-writing input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid darkgrey;
 }
-.left-rigth div:last-child {
-  background: green;
-  justify-content: end;
+.detail-products .detail-product.item-1 .detail-description .add-writing input:focus {
+  border: 2px solid darkgrey;
+}
+.detail-products .detail-product.item-1 .detail-arrange {
+  text-align: center;
+  padding: 0 15px;
+}
+.detail-products .detail-product.item-1 .detail-arrange .arrange-item .title-2kg {
+  font-size: .9em;
+}
+.detail-products .detail-product.item-1 .detail-arrange .arrange-item .arrange-price {
+  font-size: 3em;
+}
+.detail-products .detail-product.item-1 .detail-arrange .arrange-item .mozno-deshevle {
+  font-size: .9em;
+}
+.detail-products .detail-product.item-1 .detail-arrange .arrange-item .mozno-deshevle span {
+  border-bottom: 1px dashed #414141;
+}
+.detail-products .detail-product.item-1 .detail-arrange .arrange-item .oformit-zacaz {
+  display: block;
+  height: 44px;
+  line-height: 44px;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  background: #2796ff;
+  transition: all .1s;
+  margin-top: .8em;
+  cursor: pointer;
+}
+.detail-products .detail-product.item-1 .detail-arrange .arrange-item .text-info {
+  font-size: .8em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  border-bottom: 1px solid #919191;
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes {
+  margin-top: 1em;
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes div {
+  position: relative;
+  margin-bottom: 1em;
+  display: grid;
+  align-items: center;
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes div span {
+  display: block;
+  text-align: left;
+  margin-left: 3em;
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes div:before {
+  display: block;
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes .decoration:before {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/product/cake.svg);
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes .filling:before {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/product/nachinaka.svg);
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes .figurines:before {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/product/figuraka.svg);
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes .packaging:before {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/product/padarok.svg);
+}
+.detail-products .detail-product.item-1 .detail-arrange .price-includes .photo:before {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/product/fotoapparat.svg);
 }
 #viewport {
   overflow: hidden;

@@ -20,20 +20,9 @@ class GridSlide{
         var prevSlide = new Array($(selector).children());
         var slide = new Array();
         $(".next").click(function() {
-            // console.log("next");
-            // console.log(numberSlide);
             if (numberSlide <= slideQuanti - toShow) {
-                // console.log('numberSlide: '+numberSlide+' slideQuanti - toShow: '+(slideQuanti - toShow));
                 showDisplay;
                 $(selector).children().eq(0).detach();
-                // slide = $(selector).children().eq(0).detach();
-                // console.log(1)
-                // console.log($(selector).children())
-                // console.log($(selector).children().eq(0).detach());
-                // console.log(2)
-
-                // console.log($(selector).children().eq(0).detach());
-                    
                 prevSlide.push($(selector).children());
 
                 $(selector).children().each(function(i){
@@ -52,7 +41,6 @@ class GridSlide{
             }
         })
         $('.prev').click(function(){
-            // console.log("prev");
             if (numberSlide != 0) {
                 numberSlide--;
                 $(selector).append(prevSlide[numberSlide]).animate(10000);
@@ -102,7 +90,7 @@ class GridSlide{
         console.log(indent);
         $(".next").css({
             "position": "absolute",
-            "content": "url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/new-verstka/icon/next.svg)",
+            "content": "url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/next.svg)",
             "right": "0",
             "width": size,
             "height": size,
@@ -113,7 +101,7 @@ class GridSlide{
 
         $(".prev").css({
             "position": "absolute",
-            "content": "url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/new-verstka/icon/prev.svg)",
+            "content": "url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/prev.svg)",
             "left": "0",
              "width": size,
             "height": size,
