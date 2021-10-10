@@ -16,6 +16,17 @@ $(document).ready(function() {
         }
     );
     modalWindowClick(".quick-view", ".modal-1");
+
+    $(".detail-product-item div").click(function() {
+        if ($(this).children('.info').css('display') == 'none') {
+            $(this).children('.info').slideToggle(500);
+            $(this).children('span').addClass("open");
+        } else if ($(this).children('.info').css('display') == 'block') {
+            $(this).children('.info').slideToggle(500);
+            $(this).children('span').removeClass("open");
+        }
+
+    })
 })
 
 function isNumber(num) {

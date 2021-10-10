@@ -28,6 +28,15 @@ h1 {
   font-size: 1.7em;
   font-family: 'Open Sans', sans-serif;
 }
+.h3 {
+  display: block;
+  font-size: 1.17em;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
 .grid {
   display: grid;
 }
@@ -634,8 +643,8 @@ header .bottom .search-favorites .favorites p {
   justify-self: start;
 }
 .detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .table-weight .slide-block {
-  grid-template-columns: repeat(6, 1fr);
   margin-top: 1em;
+  flex-wrap: wrap;
 }
 .detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .table-weight .slide-block div {
   position: relative;
@@ -647,6 +656,7 @@ header .bottom .search-favorites .favorites p {
   margin-right: 5px;
   border-radius: 8px;
   opacity: .7;
+  margin-top: 1em;
 }
 .detail-products .detail-product.item-1 .detail-description .item-1 .block-weight .table-weight .slide-block div:hover {
   box-shadow: inset 0 0 0 1px #009be7;
@@ -769,6 +779,80 @@ header .bottom .search-favorites .favorites p {
 }
 .detail-products .detail-product.item-1 .detail-arrange .price-includes .photo:before {
   content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/product/fotoapparat.svg);
+}
+.detail-products .detail-product-content .detail-product.item-2 {
+  display: grid;
+  grid-template-columns: 79% 21%;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item .button-block {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-column-gap: 1em;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item .button-block div {
+  display: flex;
+  align-items: center;
+  background: #f3f7fb;
+  border-radius: 4px;
+  padding: .5em 1.5em;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) div span {
+  display: flex;
+  position: relative;
+  border-top: 1px solid silver;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) div span:after {
+  position: absolute;
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/krectik.svg);
+  right: 0;
+  transform: rotate(45deg);
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) div span.open:after {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/krectik-open.svg);
+  transform: rotate(0deg);
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) div .info {
+  display: none;
+  border-top: 1px solid silver;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) div .info li {
+  margin-top: 1em;
+  font-size: .9em;
+  padding-left: 1.5em;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) div .info li:last-child {
+  margin-bottom: 1em;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) .terms-delivery span:before {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/new-verstka/icon/tracking.svg);
+  margin-right: 1em;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) .payment-terms span:before {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/wallet.svg);
+  margin-right: 1em;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) .our-guarantees {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  border-top: 1px solid silver;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) .our-guarantees p:nth-child(1) {
+  display: flex;
+  align-items: center;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) .our-guarantees p:nth-child(1):before {
+  content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/prize.svg);
+  margin-right: 1em;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) .our-guarantees p:nth-child(2) {
+  justify-self: end;
+  font-size: .9em;
 }
 #viewport {
   overflow: hidden;
