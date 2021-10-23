@@ -16,7 +16,19 @@ $(document).ready(function() {
         }
     );
     modalWindowClick(".quick-view", ".modal-1");
+
+    $(".detail-product-item div").click(function() {
+        if ($(this).children('.info').css('display') == 'none') {
+            $(this).children('.info').slideToggle(500);
+            $(this).children('span').addClass("open");
+        } else if ($(this).children('.info').css('display') == 'block') {
+            $(this).children('.info').slideToggle(500);
+            $(this).children('span').removeClass("open");
+        }
+
+    })
 })
+
 function isNumber(num) {
     return typeof num === 'number' && !isNaN(num);
 }
@@ -75,14 +87,18 @@ function modalWindowClick(buttonClick, modalItem) {
     slide.gridTemplateColumns('.6fr 1fr .6fr');
     slide.button(70);
 
-    // slide_1 = new GridSlide(".grid", 4);
-    // slide_1.gap('1em');
+    // $('.add-writing input').focus(function(e) {
+    //     var $self = $(this);
+    //     $self.data('placeholder-tmp', $self.attr('placeholder'));
+    //     $self.attr('placeholder', '');
 
-    // slide_2 = new GridSlide(".qwerty", 3);
-    // slide_2.gap('2em');
+    // });
 
-    // slide_3 = new GridSlide(".qwerty2", 2);
-    // slide_3.gap('3em');
+    // $('.add-writing input').blur(function(e) {
+    //     var $self = $(this);
+
+    //     $self.attr('placeholder', $self.data('placeholder-tmp'));
+    // });
 
 
 

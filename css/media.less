@@ -25,6 +25,46 @@
             }
         }
     }
+
+    .detail-products {
+        .detail-product.item-1 {
+            grid-template-columns: 40% 60%;
+
+            .detail-arrange {
+                margin-top: 3em;
+                display: grid;
+                grid-template-columns: .35fr 1fr;
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-column-gap: 1em;
+
+                .price-includes {
+                    .price-includes-item {
+                        display: grid;
+                        grid-template-columns: repeat(5, 1fr);
+                        grid-column-gap: 1em;
+
+                        div {
+                            span {
+                                margin-left: 0;
+                                text-align: center;
+                            }
+
+                            .top {
+                                margin-top: 35px;
+                            }
+                        }
+
+                        div:before {
+                            top: 0;
+                            left: calc(~'50% - 17.5px');
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media(max-width: 1072px) {
@@ -216,6 +256,37 @@
         }
     }
 
+    .detail-products {
+        .detail-product.item-1 {
+            grid-template-columns: 1fr;
+
+            .detail-img {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                width: 70%;
+                justify-self: center;
+            }
+
+            .detail-description {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 2;
+
+                .item-1 {
+                    display: grid;
+                    justify-content: center;
+                }
+            }
+
+            .detail-arrange {
+                grid-column-start: 1;
+                grid-column-end: 3;
+                grid-row-start: 3;
+            }
+        }
+    }
+
 }
 
 @media(max-width: 820px) {
@@ -282,6 +353,22 @@
             }
         }
     }
+
+    .detail-products {
+        .detail-product.item-1 {
+            .detail-arrange {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+
+    .detail-products {
+        .detail-product-content {
+            .detail-product.item-2 {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
 }
 
 @media(max-width: 570px) {
@@ -311,6 +398,28 @@
             min-height: auto;
         }
     }
+
+    .detail-products {
+        .detail-product.item-1 {
+            .detail-description {
+                .item-1 {
+                    .block-price {
+                        grid-template-columns: 1fr;
+                    }
+                }
+            }
+
+            .detail-arrange {
+                .price-includes {
+                    .price-includes-item {
+                        grid-template-columns: repeat(3, 1fr);
+                    }
+                }
+            }
+        }
+    }
+
+    .detail-products .detail-product.item-1
 }
 
 @media(max-width: 480px) {
@@ -396,6 +505,35 @@
                     a {
                         padding: 10px 20px;
                         font-size: 1em;
+                    }
+                }
+            }
+        }
+    }
+
+    .detail-products {
+        .detail-product.item-1 {
+            .detail-description {
+                .item-1 {
+                    .block-weight {
+                        .table-weight {
+                            .slide-block {
+                                justify-content: space-between;
+                                ;
+                            }
+                        }
+                    }
+
+                    .block-price {
+                        // grid-template-columns: 1fr;
+                    }
+                }
+            }
+
+            .detail-arrange {
+                .price-includes {
+                    .price-includes-item {
+                        grid-template-columns: repeat(2, 1fr);
                     }
                 }
             }
