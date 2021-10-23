@@ -796,6 +796,28 @@ header .bottom .search-favorites .favorites p {
   border-radius: 4px;
   padding: .5em 1.5em;
 }
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item .description {
+  max-width: 500px;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item .description .product-type {
+  display: grid;
+  grid-template-columns: max-content 1fr 25%;
+  margin-top: 1em;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item .description .product-type .border_bottom {
+  border-bottom: 2px dotted #d3d3d3;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item .description .product-type span:nth-child(1) {
+  padding-right: 10px;
+  color: gray;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item .description .product-type .rigth {
+  display: flex;
+}
+.detail-products .detail-product-content .detail-product.item-2 .detail-product-item .description .product-type .rigth span {
+  padding-left: 10px;
+  color: gray;
+}
 .detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) div span {
   display: flex;
   position: relative;
@@ -841,10 +863,14 @@ header .bottom .search-favorites .favorites p {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   border-top: 1px solid silver;
+  border-bottom: 1px solid silver;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 .detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) .our-guarantees p:nth-child(1) {
   display: flex;
   align-items: center;
+  line-height: 1;
 }
 .detail-products .detail-product-content .detail-product.item-2 .detail-product-item:nth-child(2) .our-guarantees p:nth-child(1):before {
   content: url(file:///home/profirub/%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B9%20%D1%81%D1%82%D0%BE%D0%BB/Git/tortam/icon/prize.svg);

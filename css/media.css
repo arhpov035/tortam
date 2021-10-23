@@ -239,6 +239,9 @@
   .detail-products .detail-product.item-1 .detail-arrange {
     grid-template-columns: 1fr;
   }
+  .detail-products .detail-product-content .detail-product.item-2 {
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 570px) {
   .conteyner {

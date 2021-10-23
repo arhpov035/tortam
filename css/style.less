@@ -1108,6 +1108,31 @@ nav {
                         padding: .5em 1.5em;
                     }
                 }
+                .description{
+                    max-width: 500px;
+                    .product-type{
+                        display: grid;
+                        grid-template-columns: max-content 1fr 25%;
+                        margin-top: 1em;
+                        .border_bottom{
+                            border-bottom: 2px dotted #d3d3d3;
+                        }
+                        span:nth-child(1){
+                            padding-right: 10px;
+                            color: gray;
+                        }
+                        // span:nth-child(3){
+                        //     justify-self: end;
+                        // }
+                        .rigth{
+                            display: flex;
+                            span{
+                                padding-left: 10px;
+                                color: gray;
+                            }
+                        }
+                    }
+                }
             }
 
             .detail-product-item:nth-child(2) {
@@ -1169,11 +1194,15 @@ nav {
                     grid-template-columns: 1fr 1fr;
                     align-items: center;
                     border-top: 1px solid silver;
+                    border-bottom: 1px solid silver;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
                 }
 
                 .our-guarantees p:nth-child(1) {
                     display: flex;
                     align-items: center;
+                    line-height: 1;
                 }
 
                 .our-guarantees p:nth-child(1):before {
